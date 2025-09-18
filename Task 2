@@ -1,0 +1,14 @@
+number = 123456
+number_list = list(str(number))
+
+sum_left = 0
+sum_right = 0
+
+for i in range(0, 3):
+    sum_left += int(number_list[i])
+for k in range(3, 6):
+    sum_right += int(number_list[k])
+if sum_left == sum_right:
+    print('Счастливый билет')
+else:
+    print('Несчастливый билет')
